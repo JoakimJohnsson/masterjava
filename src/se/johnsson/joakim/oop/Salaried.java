@@ -5,13 +5,15 @@ public class Salaried extends Employee {
     private double salary = DEFAULT_SALARY;
 
     public Salaried() {
-
+        // Empty constructor automatically calls parent default constructor.
     }
 
     public Salaried(String name) {
         this(name, DEFAULT_SALARY);
     }
+
     public Salaried(String name, double salary) {
+        // 'super' invokes a method in the parent class.
         super(name);
         this.salary = salary;
     }
